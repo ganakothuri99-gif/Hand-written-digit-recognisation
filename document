@@ -1,0 +1,33 @@
+Project Documentation: Handwritten Digit Recognition Using Deep Learning
+1. Project Overview
+Title: Handwritten Digit Recognition using Deep Learning
+Team Name: 7
+Team Members: M HARSHA VARDHAN , NIKHIL SAI VIJAY KUMAR, JATHIN GURU SAI , PRAVEEN, N G V L PARAMESWARI
+
+This project focuses on building a system that automatically recognizes handwritten digits (0–9) from image inputs using a Convolutional Neural Network (CNN).
+2. Introduction
+Handwritten digit recognition is a classical machine learning and computer vision task. The goal is to enable a computer to correctly identify digits written by humans, which vary in style and shape.Real-world applications include:- Cheque processing in banking- ZIP code recognition in postal services- Automated form data entry
+3. Objectives
+- Develop a deep learning system for automatic handwritten digit recognition- Achieve high accuracy using CNNs- Demonstrate real-time digit classification
+4. Problem Statement
+Manual interpretation of handwritten data is:- Slow and time-consuming- Prone to human errors- Expensive at scaleNeed: A fast, reliable, and automated digit recognition system.
+5. Proposed Solution
+We propose a deep learning solution based on CNNs trained on the MNIST dataset (60k training, 10k testing images).Key Points:- Takes a handwritten digit image as input- Performs preprocessing (normalization & resizing)- Predicts the correct digit with high accuracy
+6. Features
+- Input: Handwritten digit images- Preprocessing: Normalization & resizing- Model: CNN with multiple Conv2D, Pooling, and Dense layers- Output: Predicted digit (0–9)- Performance: High accuracy due to large dataset and optimized model
+7. Technology Stack
+Language: PythonFrameworks: TensorFlow, KerasLibraries: NumPy, MatplotlibDataset: MNISTTools: Jupyter Notebook / Google Colab, GitHub
+8. System Design & Architecture
+1. Input Layer – 28×28 grayscale image2. Convolutional Layers – Feature extraction3. Pooling Layers – Dimensionality reduction4. Fully Connected Layer – Classification5. Output Layer – 10 neurons representing digits (0–9)
+9. Implementation Steps
+1. Import MNIST dataset2. Preprocess images (normalize pixel values, reshape)3. Build CNN model (Conv2D, MaxPooling, Dense layers)4. Train model on MNIST training data5. Evaluate accuracy on test dataset6. Test predictions with user-provided handwritten digits
+10. Challenges Faced & Solutions
+- Long training time → Used GPU/Google Colab- Model overfitting → Introduced dropout layers- Variations in handwriting styles → Trained on large and diverse dataset
+11. Results
+- Accuracy: ~98% on MNIST test dataset- Prediction: Successfully predicts unseen handwritten digits- Generalization: Works well on multiple handwriting styles
+12. Future Scope
+- Extend to handwritten alphabets and words- Enable real-time recognition using live camera feed- Deploy as a web or mobile application
+13. Conclusion
+This project successfully demonstrates the use of CNNs for handwritten digit recognition, significantly reducing manual effort and improving accuracy. The system highlights the real-world potential of deep learning in automation tasks.
+14. References
+- MNIST Dataset: http://yann.lecun.com/exdb/mnist/- TensorFlow & Keras Documentation- Deep Learning with Python by François Chollet
